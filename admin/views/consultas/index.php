@@ -1,0 +1,119 @@
+<?php session_start();
+?>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="public/css/consultas.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+  <?php require_once("views/layouts/navbar.php");?>
+  <main class="">
+    <header>
+      <h1 class="text-center">Listado de Consultas</h1>
+    </header>
+<div class="table-responsive px-5 ">
+
+    <table class="table table-striped table-bordered">
+      <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">FECHA DE CONSULTA</th>
+            <th scope="col">NOMBRE</th>
+            <th scope="col">APELLIDO</th>
+            <th scope="col">CORREO</th>
+            <th scope="col">TELEFONO</th>
+            <th scope="col">MENSAJE</th>
+            <th scope="col">IMAGEN</th>
+            <th scope="col">ACCIONES</th>
+        </tr>
+      </thead>
+      <tbody>
+        <?php 
+        include "core/conexion.php";
+        //Paginador
+        $sql_registe = mysqli_query($conn,"SELECT COUNT(*) as total_registro FROM personaliza ");
+        $result_register = mysqli_fetch_array($sql_registe);
+        $total_registro = $result_register['total_registro'];
+
+        $por_pagina = 5;
+
+        if(empty($_GET['pagina']))
+        {
+          $pagina = 1;
+        }else{
+          $pagina = $_GET['pagina'];
+        }
+
+        $desde = ($pagina-1) * $por_pagina;
+        $total_paginas = ceil($total_registro / $por_pagina);
+
+        $query = mysqli_query($conn,"SELECT * FROM personaliza 
+                                     ORDER BY id 
+                                     ASC LIMIT $desde,$por_pagina");
+
+        mysqli_close($conn);
+
+        $result = mysqli_num_rows($query);
+        if($result > 0){
+
+          while ($data = mysqli_fetch_array($query)) {
+        ?>
+          <tr>
+            <td scope="row"><?php echo $data['id']?></td>
+            <td><?php echo $data['fechaPersonaliza']?></td>
+            <td><?php echo $data['nom']?></td>
+            <td><?php echo $data['ape']?></td>
+            <td><?php echo $data['correo']?></td>
+            <td><?php echo $data['cel']?></td>
+            <td><textarea class="msg" disabled><?php echo $data['msg']?></textarea></td>
+            <td><img style="width: 200px;" src="data:image/jpg;base64,<?php echo base64_encode($data['imagen'])?>" alt=""></td>
+            <td style="text-align: center">
+              <form action="atendidoConsultas" method="POST">
+                <input type="hidden" name="id" value="<?php echo $data ['id']?>">
+                <button type="submit" class="btn btn-danger" onclick="return confirm('¿Está seguro de que desea dar por terminada la consulta?');">Resuelta</button>
+              </form>
+            </td>
+          </tr>
+        <?php 
+          } 
+        }?>
+      </tbody>
+    </table>
+  </div>
+    <div class="paginador">
+			<ul>
+			<?php 
+				if($pagina != 1)
+				{
+			 ?>
+				<li><a href="?pagina=<?php echo 1; ?>">|<</a></li>
+				<li><a href="?pagina=<?php echo $pagina-1; ?>"><<</a></li>
+			<?php 
+				}
+				for ($i=1; $i <= $total_paginas; $i++) { 
+					# code...
+					if($i == $pagina)
+					{
+						echo '<li class="pageSelected">'.$i.'</li>';
+					}else{
+						echo '<li><a href="?pagina='.$i.'">'.$i.'</a></li>';
+					}
+				}
+
+				if($pagina != $total_paginas)
+				{
+			 ?>
+				<li><a href="?pagina=<?php echo $pagina + 1; ?>">>></a></li>
+				<li><a href="?pagina=<?php echo $total_paginas; ?> ">>|</a></li>
+			<?php } ?>
+			</ul>
+		</div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+:root {
+  --primary-color: #2aa4bf;
+  --secondary-color: white;
+}
+.panel-cabezera{
+  width: 100%;
+  max-width: 1676px;
+  height: 360px;
+  max-height: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  background-color: rgb(91, 103, 146) !important;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 50px !important;
+
+}
+.text{
+    color: white;
+    font-weight: bold;
+    font-size: 4vw;
+
+}
+.imagen-responsive {
+  max-width: 1451px;
+  max-height: 818px;
+}
+.container-cabezera{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.container-cardblog img{
+  border-radius: 50px;
+}
+
+.nav-cabezera {
+  padding-top: 10px;
+  text-align: center;
+  background-color: white;
+}
+
+.nav-cabezera ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+.nav-cabezera li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.nav-cabezera a {
+  display: block;
+  padding: 10px;
+  color: rgb(59, 69, 167);
+  text-decoration: none;
+  border-radius: 20px;
+  font-size: 1.2em;
+}
+
+.nav-cabezera a:hover {
+  background-color: rgb(7, 47, 121);
+  color: white;
+}
+
+.container-cardblog {
+  width: 100%;
+  cursor: pointer;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 10px;
+  padding-bottom: 10px;
+  box-sizing: border-box;
+}
+.img-cardblog{
+  border-radius: 50px;
+}
+.titulo-text{
+  color:rgb(3, 3, 77);
+}
+.col-6 img {
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  max-height: 559px;
+  display: flex;
+  margin-bottom: 10px;
+  flex-direction: column;
+}
+
+.text-autor {
+  text-align: justify;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.img-autor{
+  width: 95px;
+  height: 95px;
+  border-radius: 50%;
+  background-color: #ADD8E6;
+}
+
+
+.texto-prueba {
+  background-color: lightgray;
+  padding: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+  .container-cabezera {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .panel-cabezera {
+    height: auto;
+    max-height: none;
+    padding: 10px;
+  }
+  
+}

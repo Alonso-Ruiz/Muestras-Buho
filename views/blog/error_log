@@ -1,0 +1,5 @@
+[03-Mar-2023 09:11:02 America/Boise] PHP Warning:  require_once(views/layouts/enlaces.php): Failed to open stream: No such file or directory in /home3/ghxumdmy/public_html/yuntasproducciones/views/blog/index.php on line 11
+[03-Mar-2023 09:11:02 America/Boise] PHP Fatal error:  Uncaught Error: Failed opening required 'views/layouts/enlaces.php' (include_path='.:/opt/cpanel/ea-php80/root/usr/share/pear') in /home3/ghxumdmy/public_html/yuntasproducciones/views/blog/index.php:11
+Stack trace:
+#0 {main}
+  thrown in /home3/ghxumdmy/public_html/yuntasproducciones/views/blog/index.php on line 11

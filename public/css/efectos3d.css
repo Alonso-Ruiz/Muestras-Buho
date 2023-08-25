@@ -1,0 +1,1067 @@
+@media (min-width: 1024px){
+
+.banner-contenedor{
+	margin-top: 0vh;
+	position:relative;
+	width: 100%;
+	height: 100vh;
+	background-color: purple;
+}
+.banner-imagen{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.banner-letras{
+	font-size:5vh;
+	font-size:5vw;
+	position: absolute;
+	left: 9vh;
+	bottom: 23vh;
+	color: white;
+	font-family: 'Bungee', cursive;
+}
+
+.circle-whats{
+	position: absolute;
+	height: 12vh;
+	left: 9vh;
+	bottom: 13vh;
+	background-color: white;
+	border-radius: 100px;
+}
+
+.banner-whats{
+	height: 100%;
+	width: 100%;	
+	object-fit: contain;
+	filter: invert(56%) sepia(98%) saturate(305%) hue-rotate(166deg) brightness(99%) contrast(99%);
+}
+
+.banner-buttom{
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	color: white;
+	background-color: #58bcfc;
+	position: absolute;
+	height: 12vh;
+	width: 30vh;
+	left: 23vh;
+	bottom: 13vh;
+	border-radius: 25px;
+	text-decoration: none;
+}
+
+.banner-buttom-letters{
+	text-decoration: none;
+	font-family: 'Akshar', sans-serif;
+	font-size: 20px;
+	text-align: center;	
+}
+
+.banner-buttom:hover{
+	text-decoration: none;
+	color: white;
+}
+
+.ventilador-contenedor{
+	position: relative;
+	background-color: #58bcfc;
+	width: 100%;
+	height: 70vh;
+	
+}
+
+.ventilador-imagen{
+	position: absolute;
+	height: 70vh;
+	left: 14vh;
+	margin-top: 3rem ;
+	margin-bottom: 3rem;
+	width: 45%;
+}
+
+.ventilador{
+	object-fit: cover;
+	height: 100%;
+	width: 100%;	
+}
+
+.ventilador-letras{
+	position: absolute;
+	width: 40%;
+	top: 29vh;
+	left: 110vh;
+}
+
+.letras-titulo{
+	color: white;
+	font-family: 'Bungee', cursive;
+	font-size:4vh;
+}
+
+.letras-parrafo{
+	color: white;
+	font-family: 'Akshar', sans-serif;
+	font-size:2.5vh;
+	width: 34vw;
+}
+
+}
+
+@media (max-width: 1400px){
+	.banner-contenedor{
+	margin-top: 0vh;
+	position:relative;
+	width: 100%;
+	height: 90vh;
+	background-color: purple;
+}
+.banner-imagen{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.banner-letras{
+	font-size:5vh;
+	font-size:5vw;
+	position: absolute;
+	left: 9vh;
+	bottom: 27vh;
+	color: white;
+	font-family: 'Bungee', cursive;
+}
+
+.circle-whats{
+	position: absolute;
+	height: 12vh;
+	left: 9vh;
+	bottom: 15vh;
+	background-color: white;
+	border-radius: 100px;
+}
+
+.banner-whats{
+	height: 100%;
+	width: 100%;	
+	object-fit: contain;
+	filter: invert(56%) sepia(98%) saturate(305%) hue-rotate(166deg) brightness(99%) contrast(99%);
+}
+
+.banner-buttom{
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	color: white;
+	background-color: #58bcfc;
+	position: absolute;
+	height: 12vh;
+	width: 30vh;
+	left: 23vh;
+	bottom: 15vh;
+	border-radius: 25px;
+	text-decoration: none;
+}
+
+.banner-buttom-letters{
+	text-decoration: none;
+	font-family: 'Akshar', sans-serif;
+	font-size: 21px;
+	text-align: center;	
+}
+
+.banner-buttom:hover{
+	text-decoration: none;
+	color: white;
+}
+
+.ventilador-contenedor{
+	position: relative;
+	background-color: #58bcfc;
+	width: 100%;
+	height: 70vh;
+}
+
+.ventilador-imagen{
+	position: absolute;
+	height: 70vh;
+	left: 9vh;
+}
+
+.ventilador{
+	object-fit: cover;
+	height: 100%;
+	width: 100%;	
+}
+
+.ventilador-letras{
+	position: absolute;
+	width: 40%;
+	top: 29vh;
+}
+
+.letras-titulo{
+	color: white;
+	font-family: 'Bungee', cursive;
+	font-size:4vh;
+}
+
+.letras-parrafo{
+	color: white;
+	font-family: 'Akshar', sans-serif;
+	font-size:2.5vh;
+	width: 34vw;
+}
+}
+
+@media (max-width: 1200px){
+.banner-contenedor{
+	margin-top: 0vh;
+	position:relative;
+	width: 100%;
+	height: 90vh;
+	background-color: purple;
+}
+.banner-imagen{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.banner-letras{
+	font-size:6vh;
+	font-size:6vw;
+	position: absolute;
+	left: 6vh;
+	bottom: 29vh;
+	color: white;
+	font-family: 'Bungee', cursive;
+}
+
+.circle-whats{
+	position: absolute;
+	height: 12vh;
+	left: 6vh;
+	bottom: 17vh;
+	background-color: white;
+	border-radius: 100px;
+}
+
+.banner-whats{
+	height: 100%;
+	width: 100%;	
+	object-fit: contain;
+	filter: invert(56%) sepia(98%) saturate(305%) hue-rotate(166deg) brightness(99%) contrast(99%);
+}
+
+.banner-buttom{
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	color: white;
+	background-color: #58bcfc;
+	position: absolute;
+	height: 12vh;
+	width: 30vh;
+	left: 20vh;
+	bottom: 17vh;
+	border-radius: 25px;
+	text-decoration: none;
+}
+
+.banner-buttom-letters{
+	text-decoration: none;
+	font-family: 'Akshar', sans-serif;
+	font-size: 22px;
+	text-align: center;	
+}
+
+.banner-buttom:hover{
+	text-decoration: none;
+	color: white;
+}
+
+.ventilador-contenedor{
+	position: relative;
+	background-color: #58bcfc;
+	width: 100%;
+	height: 70vh;
+}
+
+.ventilador-imagen{
+	padding: 20px;
+	position: absolute;
+	height: 70vh;
+	left: 0vh;
+}
+
+.ventilador{
+	object-fit: cover;
+	height: 100%;
+	width: 100%;	
+}
+
+.ventilador-letras{
+	position: absolute;
+	width: 40%;
+	top: 24vh;
+	left: 140vh;	
+}
+
+.letras-titulo{
+	color: white;
+	font-family: 'Bungee', cursive;
+	font-size:4vh;
+}
+
+.letras-parrafo{
+	color: white;
+	font-family: 'Akshar', sans-serif;
+	font-size:2.5vh;
+	width: 34vw;
+}
+}
+
+@media (max-width: 992px){
+.banner-contenedor{
+	margin-top: 0vh;
+	position:relative;
+	width: 100%;
+	height: 90vh;
+	background-color: purple;
+}
+.banner-imagen{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.banner-letras{
+	font-size:6vh;
+	font-size:6vw;
+	position: absolute;
+	left: 6vh;
+	bottom: 29vh;
+	color: white;
+	font-family: 'Bungee', cursive;
+}
+
+.circle-whats{
+	position: absolute;
+	height: 12vh;
+	left: 6vh;
+	bottom: 17vh;
+	background-color: white;
+	border-radius: 100px;
+}
+
+.banner-whats{
+	height: 100%;
+	width: 100%;	
+	object-fit: contain;
+	filter: invert(56%) sepia(98%) saturate(305%) hue-rotate(166deg) brightness(99%) contrast(99%);
+}
+
+.banner-buttom{
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	color: white;
+	background-color: #58bcfc;
+	position: absolute;
+	height: 12vh;
+	width: 30vh;
+	left: 20vh;
+	bottom: 17vh;
+	border-radius: 25px;
+	text-decoration: none;
+}
+
+.banner-buttom-letters{
+	text-decoration: none;
+	font-family: 'Akshar', sans-serif;
+	font-size: 22px;
+	text-align: center;	
+}
+
+.banner-buttom:hover{
+	text-decoration: none;
+	color: white;
+}
+
+.ventilador-contenedor{
+	position: relative;
+	background-color: #58bcfc;
+	width: 100%;
+	height: 70vh;
+}
+
+.ventilador-imagen{
+	position: absolute;
+	height: 80vh;
+	left: 4vh;
+}
+
+.ventilador{
+	object-fit: cover;
+	height: 50%;
+	width: 50%;	
+}
+
+.ventilador-letras{
+	position: absolute;
+	width: 40%;
+	top: 19vh;
+	left: 64vh;	
+}
+
+.letras-titulo{
+	color: white;
+	font-family: 'Bungee', cursive;
+	font-size:4vh;
+}
+
+.letras-parrafo{
+	color: white;
+	font-family: 'Akshar', sans-serif;
+	font-size:2.5vh;
+	width: 34vw;
+}
+}
+
+@media (max-width: 768px){
+.banner-contenedor{
+	margin-top: 0vh;
+	position:relative;
+	width: 100%;
+	height: 90vh;
+	background-color: purple;
+}
+.banner-imagen{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.banner-letras{
+	font-size:8vh;
+	font-size:8vw;
+	position: absolute;
+	left: 6vh;
+	bottom: 32vh;
+	color: white;
+	font-family: 'Bungee', cursive;
+}
+
+.circle-whats{
+	position: absolute;
+	height: 12vh;
+	left: 6vh;
+	bottom: 20vh;
+	background-color: white;
+	border-radius: 100px;
+}
+
+.banner-whats{
+	height: 100%;
+	width: 100%;	
+	object-fit: contain;
+	filter: invert(56%) sepia(98%) saturate(305%) hue-rotate(166deg) brightness(99%) contrast(99%);
+}
+
+.banner-buttom{
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	color: white;
+	background-color: #58bcfc;
+	position: absolute;
+	height: 12vh;
+	width: 30vh;
+	left: 20vh;
+	bottom: 20vh;
+	border-radius: 25px;
+	text-decoration: none;
+}
+
+.banner-buttom-letters{
+	text-decoration: none;
+	font-family: 'Akshar', sans-serif;
+	font-size: 22px;
+	text-align: center;	
+}
+
+.banner-buttom:hover{
+	text-decoration: none;
+	color: white;
+}
+
+.ventilador-contenedor{
+	position: relative;
+	background-color: #58bcfc;
+	width: 100%;
+	height: 70vh;
+}
+
+.ventilador-imagen{
+	position: absolute;
+	height: 60vh;
+	right: 28vh;
+}
+
+.ventilador{
+	object-fit: cover;
+	height: 70%;
+	width: 70%;	
+}
+
+.ventilador-letras{
+	position: absolute;
+	width: 40%;
+	top: 10vh;
+	left: 48vh;	
+}
+
+.letras-titulo{
+	color: white;
+	font-family: 'Bungee', cursive;
+	font-size:3vh;
+}
+
+.letras-parrafo{
+	color: white;
+	font-family: 'Akshar', sans-serif;
+	font-size:2.5vh;
+	width: 34vw;
+}
+}
+
+@media (max-width: 576px){
+.banner-contenedor{
+	margin-top: 0vh;
+	position:relative;
+	width: 100%;
+	height: 90vh;
+	background-color: purple;
+}
+.banner-imagen{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.banner-letras{
+	font-size:9vh;
+	font-size:9vw;
+	position: absolute;
+	left: 6vh;
+	bottom: 33vh;
+	color: white;
+	font-family: 'Bungee', cursive;
+}
+
+.circle-whats{
+	position: absolute;
+	height: 12vh;
+	left: 6vh;
+	bottom: 20vh;
+	background-color: white;
+	border-radius: 100px;
+}
+
+.banner-whats{
+	height: 100%;
+	width: 100%;	
+	object-fit: contain;
+	filter: invert(56%) sepia(98%) saturate(305%) hue-rotate(166deg) brightness(99%) contrast(99%);
+}
+
+.banner-buttom{
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	color: white;
+	background-color: #58bcfc;
+	position: absolute;
+	height: 12vh;
+	width: 30vh;
+	left: 20vh;
+	bottom: 20vh;
+	border-radius: 25px;
+	text-decoration: none;
+}
+
+.banner-buttom-letters{
+	text-decoration: none;
+	font-family: 'Akshar', sans-serif;
+	font-size: 22px;
+	text-align: center;	
+}
+
+.banner-buttom:hover{
+	text-decoration: none;
+	color: white;
+}
+
+.ventilador-contenedor{
+	position: relative;
+	background-color: #58bcfc;
+	width: 100%;
+	height: 70vh;
+}
+
+.ventilador-imagen{
+	position: absolute;
+	height: 60vh;
+	right: 20vh;
+	top: 8vh;
+}
+
+.ventilador{
+	object-fit: cover;
+	height: 75%;
+	width: 75%;	
+}
+
+.ventilador-letras{
+	position: absolute;
+	width: 40%;
+	top: 16vh;
+	left: 39vh;	
+}
+
+.letras-titulo{
+	color: white;
+	font-family: 'Bungee', cursive;
+	font-size:3vh;
+}
+
+.letras-parrafo{
+	color: white;
+	font-family: 'Akshar', sans-serif;
+	font-size:2.5vh;
+	width: 34vw;
+}
+}
+
+@media (max-width: 466px){
+.banner-contenedor{
+	margin-top: 0vh;
+	position:relative;
+	width: 100%;
+	height: 90vh;
+	background-color: purple;
+}
+.banner-imagen{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.banner-letras{
+	font-size:8vh;
+	font-size:8vw;
+	position: absolute;
+	left: 6vh;
+	bottom: 32vh;
+	color: white;
+	font-family: 'Bungee', cursive;
+}
+
+.circle-whats{
+	position: absolute;
+	height: 12vh;
+	left: 6vh;
+	bottom: 20vh;
+	background-color: white;
+	border-radius: 100px;
+}
+
+.banner-whats{
+	height: 100%;
+	width: 100%;	
+	object-fit: contain;
+	filter: invert(56%) sepia(98%) saturate(305%) hue-rotate(166deg) brightness(99%) contrast(99%);
+}
+
+.banner-buttom{
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	color: white;
+	background-color: #58bcfc;
+	position: absolute;
+	height: 12vh;
+	width: 30vh;
+	left: 20vh;
+	bottom: 20vh;
+	border-radius: 25px;
+	text-decoration: none;
+}
+
+.banner-buttom-letters{
+	text-decoration: none;
+	font-family: 'Akshar', sans-serif;
+	font-size: 22px;
+	text-align: center;	
+}
+
+.banner-buttom:hover{
+	text-decoration: none;
+	color: white;
+}
+
+.ventilador-contenedor{
+	position: relative;
+	background-color: #58bcfc;
+	width: 100%;
+	height: 70vh;
+}
+
+.ventilador-imagen{
+	position: absolute;
+	height: 60vh;
+	right: 28vh;
+}
+
+.ventilador{
+	object-fit: cover;
+	height: 70%;
+	width: 70%;	
+}
+
+.ventilador-letras{
+	position: absolute;
+	width: 40%;
+	top: 15vh;
+	left: 90vh;	
+}
+
+.letras-titulo{
+	color: white;
+	font-family: 'Bungee', cursive;
+	font-size:3vh;
+}
+
+.letras-parrafo{
+	color: white;
+	font-family: 'Akshar', sans-serif;
+	font-size:2.5vh;
+	width: 34vw;
+}
+}
+
+
+@media (min-width: 1024px){
+
+	.ventilador1-contenedor{
+		position: relative;
+		background-color: #58bcfc;
+		width: 100%;
+		height: 90vh;
+	}
+	
+	.ventilador1-imagen{
+		position: absolute;
+		height: 70vh;
+		left: 14vh;
+		margin-top: 3rem ;
+	margin-bottom: 3rem;
+	}
+	
+	.ventilador1{
+		object-fit: cover;
+		height: 100%;
+		width: 100%;	
+	}
+	
+	.ventilador1-letras{
+		position: absolute;
+		width: 40%;
+		top: 29vh;
+		left: 110vh;
+	}
+	
+	.letras-titulo{
+		color: white;
+		font-family: 'Bungee', cursive;
+		font-size:4vh;
+	}
+	
+	.letras-parrafo{
+		color: white;
+		font-family: 'Akshar', sans-serif;
+		font-size:2.5vh;
+		width: 34vw;
+	}
+	
+	}
+	
+	@media (max-width: 1400px){
+
+	.ventilador1-contenedor{
+		position: relative;
+		background-color: #58bcfc;
+		width: 100%;
+		height: 70vh;
+	}
+	
+	.ventilador1-imagen{
+		position: absolute;
+		height: 70vh;
+		left: 9vh;
+	}
+	
+	.ventilador1{
+		object-fit: cover;
+		height: 100%;
+		width: 100%;	
+	}
+	
+	.ventilador1-letras{
+		position: absolute;
+		width: 40%;
+		top: 29vh;
+		left: 87vh;
+	}
+	
+	.letras-titulo{
+		color: white;
+		font-family: 'Bungee', cursive;
+		font-size:4vh;
+	}
+	
+	.letras-parrafo{
+		color: white;
+		font-family: 'Akshar', sans-serif;
+		font-size:2.5vh;
+		width: 34vw;
+	}
+	}
+	
+	@media (max-width: 1200px){
+	
+	.ventilador1-contenedor{
+		position: relative;
+		background-color: #58bcfc;
+		width: 100%;
+		height: 70vh;
+	}
+	
+	.ventilador1-imagen{
+		padding: 20px;
+		position: absolute;
+		height: 70vh;
+		left: 140vh;
+	}
+	
+	.ventilador1{
+		object-fit: cover;
+		height: 100%;
+		width: 100%;	
+	}
+	
+	.ventilador1-letras{
+		position: absolute;
+		width: 40%;
+		top: 24vh;
+		left: 15vh;
+	}
+	
+	.letras-titulo{
+		color: white;
+		font-family: 'Bungee', cursive;
+		font-size:4vh;
+	}
+	
+	.letras-parrafo{
+		color: white;
+		font-family: 'Akshar', sans-serif;
+		font-size:2.5vh;
+		width: 34vw;
+	}
+	}
+	
+	@media (max-width: 992px){
+
+	
+	.ventilador1-contenedor{
+		position: relative;
+		background-color: #58bcfc;
+		width: 100%;
+		height: 70vh;
+	}
+	
+	.ventilador1-imagen{
+		position: absolute;
+		height: 80vh;
+		left: 4vh;
+	}
+	
+	.ventilador1{
+		object-fit: cover;
+		height: 50%;
+		width: 50%;	
+	}
+	
+	.ventilador1-letras{
+		position: absolute;
+		width: 40%;
+		top: 19vh;
+		left: 64vh;	
+	}
+	
+	.letras-titulo{
+		color: white;
+		font-family: 'Bungee', cursive;
+		font-size:4vh;
+	}
+	
+	.letras-parrafo{
+		color: white;
+		font-family: 'Akshar', sans-serif;
+		font-size:2.5vh;
+		width: 34vw;
+	}
+	}
+	
+	@media (max-width: 768px){
+	
+	.ventilador1-contenedor{
+		position: relative;
+		background-color: #58bcfc;
+		width: 100%;
+		height: 70vh;
+	}
+	
+	.ventilador1-imagen{
+		position: absolute;
+		height: 60vh;
+		right: 28vh;
+	}
+	
+	.ventilador1{
+		object-fit: cover;
+		height: 70%;
+		width: 70%;	
+	}
+	
+	.ventilador1-letras{
+		position: absolute;
+		width: 40%;
+		top: 10vh;
+		left: 48vh;	
+	}
+	
+	.letras-titulo{
+		color: white;
+		font-family: 'Bungee', cursive;
+		font-size:3vh;
+	}
+	
+	.letras-parrafo{
+		color: white;
+		font-family: 'Akshar', sans-serif;
+		font-size:2.5vh;
+		width: 34vw;
+	}
+	}
+	
+	@media (max-width: 576px){
+	
+	
+	
+	
+	
+	
+	.ventilador1-contenedor{
+		position: relative;
+		background-color: #58bcfc;
+		width: 100%;
+		height: 70vh;
+	}
+	
+	.ventilador1-imagen{
+		position: absolute;
+		height: 60vh;
+		right: 20vh;
+		top: 8vh;
+	}
+	
+	.ventilador1{
+		object-fit: cover;
+		height: 75%;
+		width: 75%;	
+	}
+	
+	.ventilador1-letras{
+		position: absolute;
+		width: 40%;
+		top: 16vh;
+		left: 39vh;	
+	}
+	
+	.letras-titulo{
+		color: white;
+		font-family: 'Bungee', cursive;
+		font-size:3vh;
+	}
+	
+	.letras-parrafo{
+		color: white;
+		font-family: 'Akshar', sans-serif;
+		font-size:2.5vh;
+		width: 34vw;
+	}
+	}
+	
+	@media (max-width: 466px){
+	
+	.ventilador1-contenedor{
+		position: relative;
+		background-color: #58bcfc;
+		width: 100%;
+		height: 70vh;
+	}
+	
+	.ventilador1-imagen{
+		position: absolute;
+		height: 60vh;
+		right: 28vh;
+	}
+	
+	.ventilador1{
+		object-fit: cover;
+		height: 70%;
+		width: 70%;	
+	}
+	
+	.ventilador-letras{
+		position: absolute;
+		width: 40%;
+		top: 15vh;
+		left: 90vh;	
+	}
+	
+	.letras-titulo{
+		color: white;
+		font-family: 'Bungee', cursive;
+		font-size:3vh;
+	}
+	
+	.letras-parrafo{
+		color: white;
+		font-family: 'Akshar', sans-serif;
+		font-size:2.5vh;
+		width: 34vw;
+	}
+	}
+	
+	
+	
+	
+	
+

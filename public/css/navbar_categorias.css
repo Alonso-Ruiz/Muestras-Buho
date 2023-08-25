@@ -1,0 +1,428 @@
+.container_navbar_categorias{
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 10px 0px;
+    justify-content: center;
+    background: #000000;
+    padding-top:70px;
+}
+/*.container_navbar_categorias .nav_bar_categorias{
+    width: auto;
+    display: flex;
+   
+}*/
+nav ul{
+    margin-right: 20px;
+    text-align: center;
+   
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+}
+nav ul li > a{
+    color: #fff;
+    position: relative;
+    bottom: -20px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 30px 40px;
+    padding-right: 0;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+nav ul li ul li img{
+  height: 50px;
+  position: absolute;
+  top: 0px;
+  padding: 0px 40px;
+
+}
+
+nav > ul > li > ul{
+    position: absolute;
+    background: white;
+    width: 100%;
+    height: 130px;
+    right: 0px;
+    left: 0px;
+    top: 80px;
+}
+nav ul li ul{
+    display: none;
+}
+
+nav ul li:hover > ul{
+    display: block;
+}
+
+nav ul li ul li > a{
+    color: black;
+    font-size: 15px;
+    font-size: bold;
+    padding: 55px 20px;
+    border-radius: 3px;
+    text-decoration: none;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+nav > ul > li > span{
+    font-size: 20px;
+}
+
+nav ul .icon2{
+    color: white;
+    position: relative;
+    top: 7px;
+}
+header nav ul li:hover .submenu9{
+    display: block
+}
+#iconos1{
+    background: #fbfbfb;
+}
+
+.container_navbar_categorias .nav_bar_categorias .ul_categorias{
+    position: relative;
+    display: inline-flex;
+    padding: 3rem 1rem;
+    margin: 0px;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    bottom: 10px;
+    height: fit-content;
+}
+.container_navbar_categorias li{
+    position: relative;
+    list-style: none;
+    padding: 0px 10px;
+    bottom: 60px;
+}
+.container_navbar_categorias a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #fbfbfb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+.container_navbar_categorias a .img_two{
+    display: none;
+}
+.container_navbar_categorias a:hover > .img_one{
+    display: none;
+}
+.container_navbar_categorias a:hover > .img_two{
+    display: block;
+}
+.container_navbar_categorias a:hover > span{
+    color: #39c;
+    opacity: .8;
+}
+.container_navbar_categorias a img{
+    object-fit: cover;
+}
+.container_navbar_categorias a span{
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 18px;
+}
+
+/**  */
+.container_banner{
+  width: 100%;
+  height: 100%;
+}
+.container_banner .banner{
+    position: relative;
+}
+
+/*.container_banner .banner::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    left: 0px;
+    top: 0px;
+}
+*/
+.container_banner .points{
+    position: relative;
+    display: flex;
+    bottom: 0px;
+    color: #fbfbfb;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 5px 0px;
+}
+.titulos2{
+    padding: 3.8rem 0rem 1rem 0rem;
+    font-size: 4rem;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.titulos2 span{
+    font-family: 'Bungee';
+    position: relative;
+    height: auto;
+    box-sizing: border-box;
+    text-decoration: underline;
+    text-decoration-color: #39c;
+    text-decoration-thickness: 6px;
+}
+
+
+/* carousel*/
+
+.container_banner .carousel_home_body{
+    overflow:visible;
+    width: 100%;
+    height: calc(60vh);
+    scroll-behavior: smooth;
+    scroll-margin-top: 80px;
+    position: relative;
+}
+
+.container_banner .carousel_home_body .view_carousel{
+    width: auto;
+    height: 100%;
+    overflow: hidden;
+}
+.container_banner .carousel_home_body .slide{
+    /* position: relative; */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    visibility: hidden;
+}
+.container_banner .carousel_home_body .slide.active{
+    visibility: visible;
+}
+.container_banner .carousel_home_body .slide img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    scroll-margin-top: 80px;
+    object-fit: revert;
+    border-radius: 01%; 
+}
+
+.carousel_home_body .points_carousel{   
+    justify-content: center;
+    height: 20px;
+}
+
+
+.container_banner .points_carousel .buttons_carousel:hover{
+    cursor: pointer;
+}
+
+.container_banner .points_carousel span{
+    display: block;
+    font-size: 2rem;
+    color: white;
+    background: #fbfbfb;
+}
+
+.container_banner .points_carousel .active{
+    background: #39c;
+}
+.container_banner .banner{
+    position: relative;
+    height: 60vh;
+    border-radius: 01%;
+    top: 20px;
+}
+.container_banner .carousel_home_body{
+    margin-top: 3rem;
+}
+
+
+/**
+    media querys
+*/
+@media (max-width: 952px){
+    
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+@media (max-width: 858px){
+    
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #040404;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        overflow-y: scroll;
+        padding-left: 0;
+        
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav > ul > li > ul{
+        position: static;
+        background: none;
+        width: 100%;
+        height: auto;
+    }
+    nav ul li ul li {
+        border-top: 1px solid rgb(197, 197, 197);
+    }
+
+    nav ul li ul li:last-child {
+        height: 100px;
+        border-bottom: 1px solid rgb(197, 197, 197);
+    }
+    nav ul li > a{
+        font-size: 20px;
+        padding: 0;
+        text-align: center;
+    }
+    nav ul li ul li > a {
+        padding: 0;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        width: 300px;
+        text-align: left;
+        margin: auto;
+    }
+    nav ul li ul li img {
+        position: static;
+    }
+    nav{
+        position: fixed;
+        z-index: 999;
+    }
+   
+    nav ul li:hover > ul.submenu9-submenu9 {
+        display: none;
+    }
+}
+@media (min-width: 900px) {
+    .container_banner .banner{
+        margin-bottom: 5rem;
+        
+    }
+
+}
+
+@media (max-width: 900px) {    
+    .container_navbar_categorias nav {
+        visibility: hidden;
+        height: 0px;
+        width: 0px;
+    }
+     
+}
+
+@media (max-width: 900px) {
+    .container_navbar_categorias li{
+        padding: 10px 0px;
+        display: flex;
+    }
+
+    .nav_bar_categorias{
+        visibility: hidden;
+    }
+
+    
+}
+
+@media (max-width: 768px) {
+    .container_productos .titulos2 span {
+        font-size: 3rem;
+        padding: 0px;
+    }
+    .container_productos .titulos2{
+        padding: 1.5rem 0 0 0;
+        margin: 1rem 0rem 1rem 0rem;
+    }
+    .container_productos .titulos2 span::after{
+        height: 5px;
+        bottom: 10px;
+    }
+    .container_banner .carousel_home_body{
+        margin-top: 2rem;
+        height: 40vh;
+    }
+    .container_banner .banner{
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+        height: 40vh;
+    }
+    
+    .container_navbar_categorias {
+        padding: 1rem 0rem;
+        margin: 0px;
+        visibility: hidden;
+    }
+    
+    .container_navbar_categorias nav {
+        visibility: hidden;
+        height: 0px;
+        width: 0px;
+    }
+    
+}
+@media (max-width: 425px){
+    .container_banner{
+        margin: 1rem;
+    }
+    .container_banner .carousel_home_body{
+        height: 30vh;
+    }
+    .container_banner .banner{
+        height: 30vh;
+    }
+
+    .container_navbar_categorias nav {
+        visibility: hidden;
+        height: 0px;
+        width: 0px;
+    }
+    
+}
+@media only screen and (max-device-width : 768px) and (orientation : portrait) {
+    .container_banner .carousel_home_body{
+        height: 40vh;
+    }
+    .container_banner .banner{
+        height: 40vh;
+    }
+}
+@media only screen and (max-device-width : 768px) and (orientation : landscape) {
+    .container_banner .carousel_home_body{
+        height: 80vh;
+    }
+    .container_banner .banner{
+        height: 80vh;
+    }
+
+}
+@media only screen and (max-device-width : 425px) and (orientation : portrait) {
+    .container_banner .carousel_home_body{
+        height: 30vh;
+    }
+    .container_banner .banner{
+        height: 30vh;
+    }
+
+}

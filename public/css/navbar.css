@@ -1,0 +1,256 @@
+
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400');
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-family: 'Nunito', sans-serif;
+}
+
+.mobile {
+    display: none;
+}
+
+a:hover {
+    color: #2AA4BF;
+}
+
+a:hover > .icon2 {
+    color: #2AA4BF;
+}
+
+nav{
+    position: relative;
+    background: black;
+    height: 80px;
+    width: 100%;
+    
+}
+
+.barra-blanca {
+    display: inline-block;
+    height: 40px;
+    width: 100%;
+    background: white;
+}
+
+.enlace{
+    position: absolute;
+    padding: 0px 40px;
+    top: -30px;
+    left: 0;
+}
+
+.logo{
+    height: 150px;
+    width: 150px;
+
+}
+nav.nav-principal ul{
+    margin-right: 20px;
+    text-align: center;
+   
+}
+
+nav.nav-principal ul li{
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+nav.nav-principal ul li > a{
+    color: #fff;
+    position: relative;
+    bottom: -20px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 30px 40px;
+    padding-right: 0;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+nav.nav-principal ul li ul li img{
+  height: 50px;
+  position: absolute;
+  top: 0px;
+  padding: 0px 40px;
+
+}
+
+nav.nav-principal > ul > li > ul{
+    position: absolute;
+    background: white;
+    width: 100%;
+    height: 130px;
+    right: 0px;
+    left: 0px;
+    top: 80px;
+}
+
+.submenu-submenu {
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    margin-top: 30px;
+    border-top: 1px solid black;
+    background: white;
+    right: 0px;
+    left: 0px;
+    top: 100px;
+    padding-left: 10%;
+    padding-right: 10%;
+    
+}
+
+
+nav.nav-principal ul li ul{
+    display: none;
+}
+
+nav.nav-principal ul li:hover > ul{
+    display: block;
+}
+
+nav.nav-principal ul li ul li > a{
+    color: black;
+    font-size: 15px;
+    font-size: bold;
+    padding: 55px 20px;
+    border-radius: 3px;
+    text-decoration: none;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.submenu-submenu a {
+    padding: 0;
+}
+
+.submenu-submenu a::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #2AA4BF;
+    border-radius: 50px;
+    position: relative;
+    top: 6px;
+    margin-right: 5px;
+}
+
+nav.nav-principal > ul > li > span{
+    font-size: 20px;
+}
+
+nav.nav-principal ul .icon2{
+    color: white;
+    position: relative;
+    top: 7px;
+}
+
+.submenu-submenu li {
+    margin: auto 20px;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+section{
+    background: url(fondo.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: calc(100vh - 80px);
+}
+
+header nav.nav-principal ul li:hover .submenu9{
+    display: block
+}
+
+@media (max-width: 952px){
+    .enlace{
+        padding-left: 20px;
+    }
+    nav.nav-principal ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    .nav-principal ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #040404;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        overflow-y: scroll;
+        padding-left: 0;
+        
+    }
+    nav.nav-principal ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav.nav-principal > ul > li > ul{
+        position: static;
+        background: none;
+        width: 100%;
+        height: auto;
+    }
+    nav.nav-principal ul li ul li {
+        border-top: 1px solid rgb(197, 197, 197);
+    }
+
+    nav.nav-principal ul li ul li:last-child {
+        height: 100px;
+        border-bottom: 1px solid rgb(197, 197, 197);
+    }
+    nav.nav-principal ul li > a{
+        font-size: 20px;
+        padding: 0;
+        text-align: center;
+    }
+    nav.nav-principal ul li ul li > a {
+        padding: 0;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        width: 300px;
+        text-align: left;
+        margin: auto;
+    }
+    nav.nav-principal ul li ul li img {
+        position: static;
+    }
+    .nav-principal{
+        position: fixed;
+        z-index: 999;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+    .submenu9-submenu9 {
+        display: none;
+    }
+    nav.nav-principal ul li:hover > ul.submenu9-submenu9 {
+        display: none;
+    }
+}

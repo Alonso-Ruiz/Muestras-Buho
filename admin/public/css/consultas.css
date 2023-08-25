@@ -1,0 +1,34 @@
+.paginador {
+    height: 30px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .paginador ul{
+      list-style: none;
+      background: #FFF;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: flex;
+      justify-content: flex-end;
+  }
+  .paginador a, .pageSelected{
+      color: #428bca;
+      border: 1px solid #ddd;
+      padding: 5px;
+      display: inline-block;
+      font-size: 14px;
+      text-align: center;
+      width: 35px;
+  }
+  .paginador a:hover{
+      background: #ddd;
+  }
+  .pageSelected{
+      color: #FFF;
+      background: #428bca;
+      border: 1px solid #428bca;
+  }

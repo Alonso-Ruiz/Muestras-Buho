@@ -1,0 +1,538 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee&display=swap');
+
+.info {
+    width: 100%;
+    padding: 4%;
+    margin-bottom: 40px;
+    background-color: black;
+}
+.info1 {
+    width: 100%;
+    padding: 3%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    background-color: rgb(251, 251, 251);
+}
+
+.slider {
+    width: 90%;
+    margin: auto;
+}
+
+.carousel-item > img {
+    object-fit: cover;
+    width: 100%;
+    height: 400px;
+    border-radius: 10px;
+}
+
+[data-bs-target].active {
+    background-color: #2AA4BF !important;
+}
+
+
+
+
+.titulos2-container {
+    display: flex;
+    justify-content: center;
+}
+
+.titulos2 {
+    display: inline-block;
+    margin: 15px auto 30px;
+    font-size: 4.6rem;
+    font-weight: bold;
+    text-align: center;
+    cursor: none;
+}
+
+.titulos2:hover {
+    color: #2AA4BF;
+}
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
+
+h2.subtitulo2 {
+    position: relative; 
+    bottom: 60px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    width: 100%; 
+    height:60px; 
+    margin: auto; 
+    padding: 20px;
+    text-align: center;
+    background-color: #2AA4BF; 
+    color: white; 
+    border-radius: 0 0 30px 30px;
+    font-size: 2.8rem;
+}
+
+.info-2 {
+    width: 60%;
+    margin: auto;
+    font-size: 2.5rem;
+    text-align: justify;
+}
+
+.info-2-first > p {
+    margin-bottom: 100px;
+}
+
+.info-2-formulario {
+    width: 80%;
+}
+
+.info-2-formulario p {
+    text-align: center;
+}
+
+.info-2-formulario > p:nth-child(3) {
+    font-size: 2rem;
+}
+
+.formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.formulario > img {
+    width: 400px; 
+    height: 400px; 
+    margin: 20px; 
+    border: 3px solid #2AA4BF; 
+    border-radius: 20px; 
+    object-fit: cover;
+}
+
+.formulario input, .formulario textarea {
+    margin: 4px;
+    border: 1.5px solid #2AA4BF;
+    font-size: 1.5rem;
+}
+
+.formulario form input::placeholder, .formulario form textarea::placeholder {
+    font-size: 1.5rem;
+}
+
+.formulario form div:nth-child(5){
+    width: 100%;
+    margin: 5px auto 5px 4px;
+}
+
+.form-file__action {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-file__action input {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  display: none;
+}
+
+.form-file__result {
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100px;
+  background-color: #2AA4BF;
+  border-radius: 8px;
+  border: 1px dashed #2AA4BF;
+  transition: bacgroundColor 0.3s linear;
+  z-index: 10;
+}
+
+.form-file__result::after {
+  content: 'Subir imagen referencial (opcional)';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.form-file__result img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 500;
+}
+
+.form-file__result--active {
+  background-color: #FF00FE;
+}
+
+.formulario button {
+    width: 100%;
+    height: 45px;
+    margin: 5px auto 5px 4px;
+    background-color: #2AA4BF;
+    border: 1px solid #2AA4BF;
+    border-radius: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.formulario button:hover {
+    background-color: #FF00FE;
+    border: 1px solid #FF00FE;
+}
+
+@media (min-width: 1023px) {
+    .info .container div:nth-child(4) {
+        margin: auto 0 auto auto !important;
+    }
+    
+    .info .container div:nth-child(5) {
+        margin: auto auto auto 0 !important;
+    }
+}
+
+@media (max-width: 769px) {
+    .info-first {
+        padding: 0;
+    }
+
+    .slider {
+        width: 100%;
+    }
+
+    .slider img {
+        border-radius: 0;
+    }
+
+    .info-2-first p {
+        margin-bottom: 60px;
+    }
+
+    .col-md-6 {
+        margin: auto !important;
+    }
+
+    .formulario {
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    .formulario > img {
+      width: 90%;
+      height: 600px;
+  }
+}
+
+@media (max-width: 426px) {
+  .slider .carousel-inner img {
+      height: 300px;
+  }
+
+  .titulos2 {
+      font-size: 3rem;
+  }
+
+  .info-2-first p {
+      font-size: 2rem;
+  }
+
+  .info-second {
+      padding: 50px 0;
+  }
+
+  .info-2-formulario p {
+      font-size: 2rem;
+  }
+
+  .formulario > img {
+      width: 98%;
+      height: 400px;
+      margin-left: 25px;
+  }
+
+  .form-file__result::after {
+      font-size: 1.5rem;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap');
+
+body{
+margin: 0;
+padding: 0;
+}
+
+.tittle {
+color: #fff;
+}
+
+.tittle:hover {
+color: #3399cc;
+}
+
+.centralizar {
+display: flex;
+justify-content: center;
+align-items: center;
+padding-top: 40px;
+margin-bottom: 55px;
+}
+
+.slider-02,
+.slider-04,
+.slider-06 {
+background-color: #fff;
+padding-bottom: 55px;
+}
+.contenedor {
+  width: 100%;
+  /*padding: 100px;*/
+  margin-bottom: 40px;
+  background-color: black;
+
+}
+
+.contenedor__titulo h1 {
+padding-top: 40px;
+color: #fff;
+font-family: 'Rubik', sans-serif;
+text-align: center;
+font-size: 40px;
+font-weight: 500;
+margin: 0;
+}
+
+.slider_boton{
+width: 1200px;
+height: 400px;
+overflow: hidden;
+padding-bottom: 70px;
+}
+
+.slides{
+width: 500%;
+height: 500px;
+display: flex;
+}
+
+.slides input{
+display: none;
+}
+
+.slide{
+transition: 2s;
+}
+
+/*css for manual slide navigation*/
+.navigation-manual{
+/* position: absolute; */
+width: 100%;
+margin-top: -80px;
+display: flex;
+justify-content: center;
+border: 1px solid green;
+}
+
+.manual-btn{
+border: 2px solid #40D3DC;
+padding: 5px;
+border-radius: 10px;
+cursor: pointer;
+transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+margin-right: 40px;
+}
+
+.manual-btn:hover{
+background: #40D3DC;
+}
+
+#radio1:checked ~ .first{
+margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+margin-left: -40%;
+}
+
+
+#radio4:checked ~ .first{
+margin-left: 0%;
+}
+
+#radio5:checked ~ .first{
+margin-left: -20%;
+}
+
+#radio6:checked ~ .first{
+margin-left: -40%;
+}
+
+#radio7:checked ~ .first{
+margin-left: 0%;
+}
+
+#radio8:checked ~ .first{
+margin-left: -20%;
+}
+
+#radio9:checked ~ .first{
+margin-left: -40%;
+}
+
+
+#radio10:checked ~ .first{
+margin-left: 0%;
+}
+
+#radio11:checked ~ .first{
+margin-left: -20%;
+}
+
+#radio12:checked ~ .first{
+margin-left: -40%;
+}
+
+
+#radio13:checked ~ .first{
+margin-left: 0%;
+}
+
+#radio14:checked ~ .first{
+margin-left: -20%;
+}
+
+#radio15:checked ~ .first{
+margin-left: -40%;
+}
+
+
+#radio16:checked ~ .first{
+margin-left: 0%;
+}
+
+#radio17:checked ~ .first{
+margin-left: -20%;
+}
+
+#radio18:checked ~ .first{
+margin-left: -40%;
+}
+
+
+/*css for automatic navigation*/
+
+.navigation-auto{
+    /* position: absolute;  */
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 420px;
+}
+
+.navigation-auto div{
+    border: 2px solid #40D3DC;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+background: #40D3DC;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+background: #40D3DC;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+background: #40D3DC;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+background: #40D3DC;
+}
+
+#radio5:checked ~ .navigation-auto .auto-btn5{
+background: #40D3DC;
+}
+
+#radio6:checked ~ .navigation-auto .auto-btn6{
+background: #40D3DC;
+}
+
+#radio7:checked ~ .navigation-auto .auto-btn6{
+background: #40D3DC;
+}
+
+#radio8:checked ~ .navigation-auto .auto-btn6{
+background: #40D3DC;
+}
+
+#radio9:checked ~ .navigation-auto .auto-btn6{
+background: #40D3DC;
+}
+
+#radio10:checked ~ .navigation-auto .auto-btn6{
+background: #40D3DC;
+}
+
+#radio11:checked ~ .navigation-auto .auto-btn6{
+background: #40D3DC;
+}
+
+#radio12:checked ~ .navigation-auto .auto-btn6{
+background: #40D3DC;
+}
+
+#radio13:checked ~ .navigation-auto .auto-btn6{
+  background: #40D3DC;
+}
+
+#radio14:checked ~ .navigation-auto .auto-btn6{
+  background: #40D3DC;
+}
+
+#radio15:checked ~ .navigation-auto .auto-btn6{
+  background: #40D3DC;
+}
+
+#radio16:checked ~ .navigation-auto .auto-btn6{
+  background: #40D3DC;
+}
+
+#radio17:checked ~ .navigation-auto .auto-btn6{
+  background: #40D3DC;
+}
+
+#radio18:checked ~ .navigation-auto .auto-btn6{
+  background: #40D3DC;
+}
+
+

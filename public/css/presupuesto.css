@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    font-family: 'Bangers', cursive;
+    background: center fixed url("../presupuesto/fondo1.webp");
+    background-size: cover;
+    text-align: center;
+}
+
+.mapa{
+    border-radius: 25px;
+} 
+figure{
+    display:block;
+    max-width:900px;
+    margin:auto;
+}
+.img-mapa{
+    object-fit: cover;
+}
+.titulo{
+    font-size:150%;
+    margin: 3rem;
+    font-family: 'Coda Caption', sans-serif;
+    font-weight:bold;
+    color: #fff;
+}
+.direccion{
+    font-size: 23px;
+    padding-bottom: 13px;
+
+}
+.card2{
+    display: flex;
+    flex-direction: row;
+    place-content: center;
+    margin:5px auto 35px auto;
+    width: 75%;
+    height: 150px;
+    padding-bottom: 50px;
+    justify-content: space-evenly;
+    
+}
+.card-1 img, .card-2 img, .card-3 img, .card-4 img{
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+    margin-bottom: 15px;
+    object-fit: cover;
+    padding: 5px;
+    padding-bottom: 5px;
+}
+
+
+.zoom {
+ transition: transform 0.2s;
+ border-radius: 50%;
+ width: 100px;
+ height: 300px;
+}
+.zoom:hover{
+    transform: scale(1.2);
+}
+
+@media(min-width: 651px) and (max-width: 1000px){
+    .mapa{
+        width: 85%;
+        border-radius: 25px;
+        background-color: gray;
+        margin: 10px;
+    }
+    .card-1, .card-2, .card-3, .card-4{
+        margin: 5px 15px 15px 15px;
+    }
+}
+
+@media (max-width: 650px){
+    .titulo-modify{
+        width: 90%;
+        font-family: 'Coda Caption', sans-serif;
+        font-size: 150%;
+        margin:10px auto;
+        font-weight:bold;
+        color: #fff;
+        
+    }
+    
+    .direccion{
+        width: 75%;
+        margin: 15px auto;
+        font-weight: 200;
+    } 
+    .mapa{
+        height: 200px;
+        width: 85%;
+        border-radius: 25px;
+        background-color: gray;
+        margin: 10px;
+    }
+    .card2{
+        display: flex;
+        place-content: center;
+        margin: 30px auto;
+        width: 75%;
+        height: 150px;
+        justify-content: space-evenly;
+    }
+    .card2 figcaption{
+        display: none;
+    }
+    .card-1 img, .card-2 img, .card-3 img, .card-4 img{
+        height: 65px;
+        margin: 5px;
+    }
+    
+    
+}
