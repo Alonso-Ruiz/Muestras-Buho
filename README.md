@@ -1,8 +1,6 @@
 # Muestras-Buho
 
 
-Enlace para que visite la pagina elaborada:
-https://yuntasproducciones.com/main
 
 
 ![image](https://github.com/Alonso-Ruiz/Muestras-Buho/assets/125393214/81f93a20-9e82-4063-b3bb-57b09be10b81)
